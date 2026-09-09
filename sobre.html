@@ -1,0 +1,829 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Sobre a AL PEÇAS CDV | Autopeças em Maceió</title><meta name="description" content="Conheça a AL PEÇAS CDV, empresa de autopeças e desmonte de veículos em Maceió - AL. Consulte peças, tire suas dúvidas e fale com nossa equipe."><meta name="robots" content="index, follow"><style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+    color:#222;
+    line-height:1.6;
+}
+
+/* HEADER */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#111;
+    border-bottom:3px solid #ffb000;
+    box-shadow:0 3px 15px rgba(0,0,0,.25);
+}
+
+.header-container{
+    max-width:1200px;
+    margin:auto;
+    padding:12px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    width:145px;
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:bold;
+    padding:9px 12px;
+    border-radius:6px;
+    transition:.3s;
+}
+
+nav a:hover{
+    background:#ffb000;
+    color:#111;
+}
+
+/* HERO */
+
+.hero{
+    min-height:460px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:60px 20px;
+    background:
+        linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.72)),
+        url("banner.jpg") center/cover no-repeat;
+}
+
+.hero-content{
+    max-width:850px;
+    color:#fff;
+}
+
+.hero h1{
+    font-size:46px;
+    line-height:1.15;
+    margin-bottom:20px;
+    font-weight:800;
+}
+
+.hero h1 span{
+    color:#ffb000;
+}
+
+.hero p{
+    font-size:19px;
+    max-width:720px;
+    margin:0 auto 28px;
+    color:#f1f1f1;
+}
+
+.btn-whatsapp{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    background:#25D366;
+    color:#fff;
+    text-decoration:none;
+    padding:14px 25px;
+    border-radius:8px;
+    font-size:16px;
+    font-weight:bold;
+    transition:.3s;
+    box-shadow:0 5px 18px rgba(0,0,0,.25);
+}
+
+.btn-whatsapp:hover{
+    transform:translateY(-2px);
+    filter:brightness(.95);
+}
+
+.whatsapp-icon{
+    font-size:21px;
+}
+
+/* CONTAINER */
+
+.container{
+    width:92%;
+    max-width:1100px;
+    margin:auto;
+}
+
+/* ABOUT */
+
+.about{
+    padding:70px 0;
+    background:#fff;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-title h2{
+    font-size:34px;
+    color:#35106d;
+    margin-bottom:12px;
+}
+
+.section-title .line{
+    width:70px;
+    height:4px;
+    background:#ffb000;
+    margin:auto;
+    border-radius:10px;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1.15fr .85fr;
+    gap:45px;
+    align-items:center;
+}
+
+.about-text h3{
+    font-size:27px;
+    color:#222;
+    margin-bottom:18px;
+}
+
+.about-text p{
+    font-size:17px;
+    color:#555;
+    margin-bottom:17px;
+}
+
+.about-text strong{
+    color:#222;
+}
+
+.about-card{
+    background:#111;
+    color:#fff;
+    border-radius:14px;
+    padding:32px;
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+    border-top:5px solid #ffb000;
+}
+
+.about-card h3{
+    color:#ffb000;
+    font-size:25px;
+    margin-bottom:22px;
+}
+
+.info-item{
+    display:flex;
+    gap:15px;
+    margin-bottom:20px;
+    align-items:flex-start;
+}
+
+.info-icon{
+    width:42px;
+    height:42px;
+    min-width:42px;
+    background:#ffb000;
+    color:#111;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:19px;
+    font-weight:bold;
+}
+
+.info-item strong{
+    display:block;
+    color:#fff;
+    margin-bottom:3px;
+}
+
+.info-item span{
+    color:#ccc;
+    font-size:14px;
+}
+
+/* DIFERENCIAIS */
+
+.diferenciais{
+    padding:70px 0;
+    background:#f5f5f5;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.card{
+    background:#fff;
+    padding:30px 24px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.07);
+    border-bottom:4px solid #ffb000;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 28px rgba(0,0,0,.12);
+}
+
+.card-icon{
+    width:65px;
+    height:65px;
+    margin:0 auto 18px;
+    background:#111;
+    color:#ffb000;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+}
+
+.card h3{
+    font-size:20px;
+    margin-bottom:10px;
+    color:#222;
+}
+
+.card p{
+    font-size:15px;
+    color:#666;
+}
+
+/* COMPROMISSO */
+
+.compromisso{
+    padding:75px 0;
+    background:#111;
+    color:#fff;
+    text-align:center;
+}
+
+.compromisso-content{
+    max-width:850px;
+    margin:auto;
+}
+
+.compromisso h2{
+    color:#ffb000;
+    font-size:34px;
+    margin-bottom:18px;
+}
+
+.compromisso p{
+    color:#ddd;
+    font-size:17px;
+    margin-bottom:15px;
+}
+
+/* CTA */
+
+.cta{
+    padding:70px 20px;
+    background:#ffb000;
+    text-align:center;
+}
+
+.cta h2{
+    font-size:32px;
+    color:#111;
+    margin-bottom:12px;
+}
+
+.cta p{
+    color:#222;
+    font-size:17px;
+    margin-bottom:25px;
+}
+
+.cta .btn{
+    display:inline-block;
+    background:#111;
+    color:#fff;
+    text-decoration:none;
+    padding:14px 25px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.cta .btn:hover{
+    background:#222;
+    transform:translateY(-2px);
+}
+
+/* FOOTER */
+
+footer{
+    background:#0b0b0b;
+    color:#aaa;
+    padding:35px 20px 20px;
+}
+
+.footer-container{
+    max-width:1100px;
+    margin:auto;
+    text-align:center;
+}
+
+.footer-links{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-bottom:22px;
+}
+
+.footer-links a{
+    color:#ddd;
+    text-decoration:none;
+    font-size:14px;
+}
+
+.footer-links a:hover{
+    color:#ffb000;
+}
+
+.footer-info{
+    font-size:13px;
+    line-height:1.8;
+}
+
+.footer-info strong{
+    color:#fff;
+}
+
+.copyright{
+    margin-top:22px;
+    padding-top:18px;
+    border-top:1px solid #292929;
+    font-size:12px;
+    color:#777;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+    .header-container{
+        flex-direction:column;
+        padding:12px 15px;
+    }
+
+    nav{
+        justify-content:center;
+        gap:3px;
+    }
+
+    nav a{
+        font-size:13px;
+        padding:7px 8px;
+    }
+
+    .hero{
+        min-height:420px;
+        padding:50px 18px;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .about{
+        padding:55px 0;
+    }
+
+    .about-grid{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .section-title h2{
+        font-size:29px;
+    }
+
+    .compromisso h2{
+        font-size:29px;
+    }
+
+    .cta h2{
+        font-size:28px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .logo img{
+        width:125px;
+    }
+
+    nav a{
+        font-size:12px;
+        padding:6px 7px;
+    }
+
+    .hero{
+        min-height:400px;
+    }
+
+    .hero h1{
+        font-size:29px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .btn-whatsapp{
+        width:100%;
+        max-width:300px;
+    }
+
+    .about-card{
+        padding:24px 20px;
+    }
+
+    .about-text h3{
+        font-size:23px;
+    }
+
+}
+
+</style></head><body><!-- CABEÇALHO --><header><div class="header-container">
+
+    <a href="index.html" class="logo">
+        <img src="logo.png" alt="AL PEÇAS CDV">
+    </a>
+
+    <nav>
+
+        <a href="index.html">Início</a>
+
+        <a href="index.html#galeria">Galeria</a>
+
+        <a href="index.html#servicos">Serviços</a>
+
+        <a href="index.html#faq">FAQ</a>
+
+        <a href="index.html#localizacao">Localização</a>
+
+        <a href="index.html#contato">Contato</a>
+
+    </nav>
+
+</div>
+
+</header><!-- HERO --><section class="hero"><div class="hero-content">
+
+    <h1>
+        Sobre a <span>AL PEÇAS CDV</span>
+    </h1>
+
+    <p>
+        Uma empresa voltada ao segmento de autopeças e desmonte
+        de veículos, oferecendo atendimento para consulta e
+        localização de peças em Maceió - AL.
+    </p>
+
+    <a
+        class="btn-whatsapp"
+        href="https://wa.me/5582988091799?text=Olá!%20Gostaria%20de%20conhecer%20melhor%20a%20AL%20PEÇAS%20CDV."
+        target="_blank"
+        rel="noopener"
+    >
+        <span class="whatsapp-icon">◉</span>
+        Falar pelo WhatsApp
+    </a>
+
+</div>
+
+</section><!-- SOBRE A EMPRESA --><section class="about"><div class="container">
+
+    <div class="section-title">
+
+        <h2>Quem Somos</h2>
+
+        <div class="line"></div>
+
+    </div>
+
+
+    <div class="about-grid">
+
+        <div class="about-text">
+
+            <h3>
+                Autopeças e atendimento para quem procura a peça certa
+            </h3>
+
+            <p>
+                A <strong>AL PEÇAS CDV</strong> atua no segmento de
+                autopeças e desmonte de veículos em Maceió, Alagoas,
+                oferecendo atendimento para clientes que procuram
+                peças e componentes automotivos.
+            </p>
+
+            <p>
+                Nosso objetivo é facilitar a consulta de peças,
+                proporcionando um atendimento direto para que o
+                cliente possa informar o veículo, a peça que procura
+                e receber orientações sobre disponibilidade.
+            </p>
+
+            <p>
+                Trabalhamos com atendimento voltado à consulta e
+                identificação de peças, buscando tornar o processo
+                mais simples e objetivo para nossos clientes.
+            </p>
+
+            <p>
+                Antes de realizar uma compra, recomendamos sempre
+                confirmar a aplicação, compatibilidade, estado e
+                disponibilidade da peça diretamente com nossa equipe.
+            </p>
+
+        </div>
+
+
+        <div class="about-card">
+
+            <h3>AL PEÇAS CDV</h3>
+
+            <div class="info-item">
+
+                <div class="info-icon">✓</div>
+
+                <div>
+
+                    <strong>Atendimento</strong>
+
+                    <span>
+                        Consulte nossa equipe para informações
+                        sobre peças e disponibilidade.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="info-item">
+
+                <div class="info-icon">⚙</div>
+
+                <div>
+
+                    <strong>Segmento</strong>
+
+                    <span>
+                        Autopeças e desmonte de veículos.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="info-item">
+
+                <div class="info-icon">⌖</div>
+
+                <div>
+
+                    <strong>Localização</strong>
+
+                    <span>
+                        Maceió - Alagoas.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="info-item">
+
+                <div class="info-icon">☎</div>
+
+                <div>
+
+                    <strong>Contato</strong>
+
+                    <span>
+                        (82) 98809-1799
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section><!-- DIFERENCIAIS --><section class="diferenciais"><div class="container">
+
+    <div class="section-title">
+
+        <h2>Por que consultar a AL PEÇAS CDV?</h2>
+
+        <div class="line"></div>
+
+    </div>
+
+
+    <div class="cards">
+
+        <div class="card">
+
+            <div class="card-icon">⚙</div>
+
+            <h3>Consulta de Peças</h3>
+
+            <p>
+                Informe o veículo e a peça que você procura
+                para consultar nossa equipe.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">💬</div>
+
+            <h3>Atendimento Direto</h3>
+
+            <p>
+                Entre em contato pelo WhatsApp para tirar
+                dúvidas e obter informações.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">⌖</div>
+
+            <h3>Atendimento em Maceió</h3>
+
+            <p>
+                Estamos localizados em Maceió, Alagoas,
+                atendendo clientes que procuram autopeças.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section><!-- COMPROMISSO --><section class="compromisso"><div class="container">
+
+    <div class="compromisso-content">
+
+        <h2>Nosso Compromisso</h2>
+
+        <p>
+            Buscamos oferecer um atendimento claro, objetivo
+            e transparente durante a consulta de peças.
+        </p>
+
+        <p>
+            Cada veículo possui características próprias.
+            Por isso, informações como modelo, ano, versão,
+            motorização e demais detalhes podem ser importantes
+            para verificar a compatibilidade de uma peça.
+        </p>
+
+        <p>
+            Nossa equipe está disponível para receber sua
+            solicitação e orientar você durante o atendimento.
+        </p>
+
+    </div>
+
+</div>
+
+</section><!-- CHAMADA PARA CONTATO --><section class="cta"><div class="container">
+
+    <h2>Está procurando uma peça?</h2>
+
+    <p>
+        Fale com a AL PEÇAS CDV e envie as informações
+        do veículo e da peça que você procura.
+    </p>
+
+    <a
+        class="btn"
+        href="https://wa.me/5582988091799?text=Olá!%20Estou%20procurando%20uma%20peça%20e%20gostaria%20de%20consultar%20a%20disponibilidade."
+        target="_blank"
+        rel="noopener"
+    >
+        Consultar pelo WhatsApp
+    </a>
+
+</div>
+
+</section><!-- RODAPÉ --><footer><div class="footer-container">
+
+    <div class="footer-links">
+
+        <a href="index.html">Início</a>
+
+        <a href="index.html#galeria">Galeria</a>
+
+        <a href="index.html#servicos">Serviços</a>
+
+        <a href="index.html#faq">Perguntas Frequentes</a>
+
+        <a href="index.html#localizacao">Localização</a>
+
+        <a href="index.html#contato">Contato</a>
+
+        <a href="politica.html">Política de Privacidade</a>
+
+        <a href="termos.html">Termos de Uso</a>
+
+    </div>
+
+
+    <div class="footer-info">
+
+        <strong>AL PEÇAS CDV</strong><br>
+
+        Autopeças e Desmonte de Veículos<br>
+
+        Maceió - AL<br>
+
+        CNPJ: 34.139.019/0001-35<br>
+
+        WhatsApp: (82) 98809-1799<br>
+
+        E-mail: contato@alpecascdv.com.br
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 AL PEÇAS CDV. Todos os direitos reservados.
+
+    </div>
+
+</div>
+
+</footer></body></html>
