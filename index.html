@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -20,6 +21,14 @@ AL PEÇAS CDV | Autopeças e Desmonte de Veículos em Maceió
   gtag('js', new Date());
 
   gtag('config', 'AW-18445000861');
+
+  function gtag_report_conversion() {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-18445000861/AjI2COGyvfQcEJ3BodtE',
+      'value': 1.0,
+      'currency': 'BRL'
+    });
+  }
 </script>
 
 <meta name="description"
@@ -1439,6 +1448,7 @@ footer p{
         class="btn-whatsapp"
         target="_blank"
         rel="noopener"
+        onclick="gtag_report_conversion();"
         aria-label="Consultar uma peça pelo WhatsApp">
 
             <svg
@@ -2155,9 +2165,10 @@ id="localizacao">
                 <a href="politica.html">
                     Política de Privacidade
                 </a>
+
                 <a href="termos.html">
-    Termos de Uso
-</a>
+                    Termos de Uso
+                </a>
 
             </div>
 
@@ -2190,6 +2201,8 @@ class="whatsapp-float"
 target="_blank"
 
 rel="noopener"
+
+onclick="gtag_report_conversion();"
 
 aria-label="Falar com a AL PEÇAS CDV pelo WhatsApp">
 
